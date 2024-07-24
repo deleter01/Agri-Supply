@@ -29,7 +29,7 @@ export default function SidebarToggle() {
         onMouseLeave={handleMouseLeave}
       >
         <span>
-          <div className="flex items-center justify-center w-8 h-[4.5rem]">
+          <div className={`flex items-center justify-center h-[4.5rem] ${sidebarOpen ? "w-96" : "w-32"}`}>
             <div className="flex flex-col items-center size-6">
               <div className="w-1 h-3 translate-y-[0.15rem] rounded-full bg-[#9b9b9b] transition group-hover:bg-[#ececec] group-hover:rotate-[15deg]" />
               <div className="w-1 h-3 -translate-y-[0.15rem] rounded-full bg-[#9b9b9b] transition group-hover:bg-[#ececec] group-hover:-rotate-[15deg]" />
