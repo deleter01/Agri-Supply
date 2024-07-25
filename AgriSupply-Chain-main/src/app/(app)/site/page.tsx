@@ -1,11 +1,13 @@
 import Search from "@/components/Search";
 import Image from "next/image";
 import Productinfo from "@/components/productinfo/productinfo";
-import RootLayout from './layout';
+import RootLayout from '../../layout';
+
+
 
 export default function Home() {
   return (
-    <RootLayout showHeader={true} showFooter={true}>
+   
 
     <main className="flex min-h-screen flex-col bg-zinc-100/45 items-center justify-between p-24">
 
@@ -15,6 +17,7 @@ export default function Home() {
 
       <div className="relative flex place-items-center md:-mt-80">
         <Productinfo />
+
       </div>
       
 
@@ -88,6 +91,6 @@ export default function Home() {
         </a>
       </div>
     </main>
-  </RootLayout>
+ 
   );
 }
